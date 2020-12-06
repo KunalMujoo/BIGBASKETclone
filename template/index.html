@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BIG BASKET SHOPPING</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">BIG BASKET</a>
+                </div>
+                <div class="header-links">
+                    <a href="cart.html">Cart</a>
+                    <a href="signin">Sign In</a>
+                </div>
+
+            </header>
+        
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+            <ul>
+                <li>
+                    <a href="index.html">FRUITS</a>
+                </li>
+                <li>
+                    <a href="index.html">VEGETABLES</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="content">
+            <ul class="products">
+                <li>
+                    <div class="product">
+                        <img class="product-image"src="./productimages/Apple.jpg" alt="product">
+                        <div class="product-name">
+                        <a href="product.html">Apple</a>
+                        </div>
+                        <div class="product-type"> Fruits </div>
+                        <div class="product-price">$6</div>
+                        <div></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image"src="./productimages/Mango.jpg" alt="product">
+                        <div class="product-name">
+                        <a href="product.html">Mango</a>
+                        </div>
+                        <div class="product-type"> Fruits </div>
+                        <div class="product-price">$6</div>
+                        <div></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image"src="./productimages/Banana.jpg" alt="product">
+                        <div class="product-name">
+                        <a href="product.html">Banana</a>
+                        </div>
+                        <div class="product-type"> Fruits </div>
+                        <div class="product-price">$6</div>
+                        <div></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img class="product-image"src="./productimages/Tomato.jpg" alt="product">
+                        <div class="product-name">
+                        <a href="product.html">Tomato</a>
+                        </div>
+                        <div class="product-type"> Vegetables </div>
+                        <div class="product-price">$6</div>
+                        <div class="product-rating"></div>
+                    </div>
+                </li>
+                
+            </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            All rights reserved 
+        </footer>
+        </div>
+    <script>
+        function openMenu(){
+            document.querySelector(".sidebar").classList.add("open")
+        }
+        function closeMenu(){
+            document.querySelector(".sidebar").classList.remove("open")
+        }
+    </script>
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
